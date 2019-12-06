@@ -37,10 +37,10 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Get Top 
 		@retry_attempts=0, 
 		@retry_interval=0, 
 		@os_run_priority=0, @subsystem=N'TSQL', 
-		@command=N'declare 	@MailProfile sysname =  ''DBMailProfile''
-	, @Recip varchar(max) = ''mprokunin@renins.com'' 
---	, @CopyRecip varchar(max) = ''mprokunin@renins.com'' 
-	, @CopyRecip varchar(max) = ''WebDev_Integration@renins.com''
+		@command=N'declare 	@MailProfile sysname =  ''DBMailProfileName''
+	, @Recip varchar(max) = ''name1@mail.com'' 
+--	, @CopyRecip varchar(max) = ''name1@mail.com'' 
+	, @CopyRecip varchar(max) = ''name1@mail.com''
 ----- Version 
 declare @version varchar(100) = ''ver. 1.2 Dec 3,2019''
 declare @html varchar(max), @rowstr varchar(1000), @cnt int = 0
